@@ -1,5 +1,6 @@
 import React from 'react';
 import './Header.css';
+import {Link} from "react-router-dom";
 
 const Header = () => {
     const openGithub = () => {
@@ -12,7 +13,9 @@ const Header = () => {
     return(
         <div className='headerContainer'>
             <div>
-                <img className='headerLogo' alt='profit_logo' src="/image/profit_logo.png" />
+                <Link to="/" className='headerLogoLink'>
+                    <img className='headerLogo' alt='profit_logo' src="/image/profit_logo.png" />
+                </Link>
             </div>
             <div className='headerbar'>
                 <button className="headerMenu" onClick={openGithub}>github</button>
