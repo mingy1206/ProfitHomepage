@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Personal = () => {
-    return(
+    return (
         <h1>Personal page</h1>
     );
 };
