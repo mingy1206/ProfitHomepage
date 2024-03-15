@@ -26,7 +26,7 @@ const MyPage = () => {
                     <div class="right-content1">
                         <h2>서용준</h2>
                         <p>1999년 4월 22일 서울 출생</p>
-                        <p>+82 10-9690-0159</p>
+                        {/* <p>+82 10-9690-0159</p> */}
                         <p>tom990422@gmail.com</p>
                         <p><a style={{ color: "white" }} href="https://mango0422.github.io/">https://mango0422.github.io/</a></p>
                     </div>
@@ -56,7 +56,6 @@ const MyPage = () => {
                         </div>
                     </div>
                 </div>
-
             </article>
         </div>
     );
