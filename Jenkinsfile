@@ -39,9 +39,9 @@ pipeline {
             steps {
                 sh '''docker build -t mango0422/homepage:$(docker images | awk '($1 == "mango0422/homepage") {print $2 += .01; exit}') .'''
                 // docker hub에 push 하기위해 login
-                sh 'docker login -u "tom990422@gmail.com" -p "mundoego!!3732"'
+                // sh 'docker login -u "tom990422@gmail.com" -p "mundoego!!3732"'
                 // docker hub에 push
-                sh '''docker push mango0422/homepage:$(docker images | awk '($1 == "mango0422/homepage") {print $2; exit}')'''
+                // sh '''docker push mango0422/homepage:$(docker images | awk '($1 == "mango0422/homepage") {print $2; exit}')'''
                 // tag가 latest인 image를 최신 버전을 통해 생성
                 sh '''docker tag mango0422/homepage:$(docker images | awk '($1 == "mango0422/homepage") {print $2; exit}') mango0422/homepage:latest'''
                 // latest를 docker hub에 push
