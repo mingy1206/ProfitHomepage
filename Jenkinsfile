@@ -54,9 +54,9 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh 'docker rm -f mango0422/homepage'
+                sh 'docker rm -f homepage'
                 // sh 'docker-compose up -d'
-                sh 'docker run -d -p 3000:3000 mango0422/homepage'
+                sh 'docker run -d -p 3000:3000 --name homepage mango0422/homepage'
             }
             // post {
             //     success {
