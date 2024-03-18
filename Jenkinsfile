@@ -24,22 +24,10 @@ pipeline {
         }
 
         stage('Docker build'){
-            // steps {
-            //     sh '''docker build -t mango0422/homepage:0.0.1 .'''
-            //     // docker hub에 push 하기위해 login
-            //     sh 'docker login -u "tom990422@gmail.com" -p "mundoego!!3732"'
-            //     // docker hub에 push
-            //     sh '''docker push mango0422/homepage:0.0.1 mango0422/latest'''
-            //     // tag가 latest인 image를 최신 버전을 통해 생성
-            //     sh '''docker tag mango0422/homepage:0.0.1 mango0422/latest'''
-            //     // latest를 docker hub에 push
-            //     // sh 'docker push mango0422/homepage:latest'
-            // }
 
             steps {
                 sh '''docker build -t mango0422/homepage:$(docker images | awk '($1 == "mango0422/homepage") {print $2 += .01; exit}') .'''
                 // docker hub에 push 하기위해 login
-                // sh 'docker login -u "tom990422@gmail.com" -p "mundoego!!3732"'
                 // docker hub에 push
                 // sh '''docker push mango0422/homepage:$(docker images | awk '($1 == "mango0422/homepage") {print $2; exit}')'''
                 // tag가 latest인 image를 최신 버전을 통해 생성
@@ -66,7 +54,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh 'docker rm -f front'
+                sh 'docker rm -f mango0422/homepage'
                 // sh 'docker-compose up -d'
                 sh 'docker run -d -p 3000:3000 mango0422/homepage'
             }
