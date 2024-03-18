@@ -2,6 +2,16 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## member 정리
+
+- mem1 : 서용준
+- mem2 : 이민기
+- mem3 : 김동관
+- mem4 : 권민우
+- mem5 : 김용우
+- mem6 : 원우형
+- mem7 : 김관일
+
 ## Available Scripts
 
 In the project directory, you can run:

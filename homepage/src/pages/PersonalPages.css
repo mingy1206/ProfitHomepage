@@ -1,0 +1,117 @@
+.home-image {
+  position: relative;
+  background-image: url("./img/ProFit_member.jpg");
+  height: 100vh;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  margin: 0;
+  padding: 0;
+}
+.main-cover {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+}
+
+.main-text {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  /* border: 3px solid #f1f1f1; */
+  transform: translate(-50%, -50%);
+  color: white;
+  z-index: 2;
+  text-align: center;
+  margin: 0;
+  width: 80%;
+  padding: 10px;
+}
+.main-text h1 {
+  font-size: 300%;
+}
+
+.history {
+  margin: 0;
+}
+
+#content {
+  display: flex;
+}
+
+.img1 {
+  border-radius: 30%; /* 원하는 둥글기 정도로 값 조절 */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* 블러 효과 강도 조절 */
+}
+
+#content .left-content1,
+#content .right-content1 {
+  padding: 20px;
+  position: relative;
+  margin: auto;
+}
+
+#content .left-content1 {
+  text-align: right;
+  width: 50%;
+  display: block;
+  margin-left: 50px;
+}
+
+#content .right-content1 {
+  width: 100%;
+  display: block;
+}
+
+#content .left-content2,
+#content .right-content2 {
+  padding: 20px;
+  position: center;
+}
+
+#content .right-content2 {
+  margin-left: 40px;
+  width: 50%;
+}
+
+#content h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#content ul {
+  list-style: none;
+  padding: 0;
+}
+
+#content ul li {
+  margin-bottom: 5px;
+}
+
+.flex-container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 10px;
+  place-items: center;
+}
+
+.icon {
+  max-height: 60px;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.right-content1 a {
+  color: white;
+}

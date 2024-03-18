@@ -1,19 +1,28 @@
 import React, { useState, useEffect } from 'react';
-import './Style.css'; // CSS 파일을 가져옴
-import my_img from './img/my_img.png'
-import icon1 from './img/icon/icon1.png'
-import icon2 from './img/icon/icon2.png'
-import icon3 from './img/icon/icon3.png'
-import icon4 from './img/icon/icon4.png'
-import icon5 from './img/icon/icon5.png'
-import icon6 from './img/icon/icon6.png'
-import icon7 from './img/icon/icon7.png'
-import icon8 from './img/icon/icon8.png'
-import icon9 from './img/icon/icon9.png'
+// import './Style.css'; // CSS 파일을 가져옴
+import my_img from './my_img.png'
+import icon1 from '../img/icon/spring.png'
+import icon2 from '../img/icon/react.png'
+import icon3 from '../img/icon/python.png'
+import icon4 from '../img/icon/node.png'
+import icon5 from '../img/icon/mysql.png'
+import icon6 from '../img/icon/linux.png'
+import icon7 from '../img/icon/java.png'
+import icon8 from '../img/icon/git.png'
+import icon9 from '../img/icon/aws.png'
+import icon10 from '../img/icon/fastapi.png'
+import icon11 from '../img/icon/fastapi.png'
+import icon12 from '../img/icon/fastapi.png'
 
 const MyPage = () => {
+    const name = "서용준";
+    const email = "syj0422@gachon.ac.kr";
+    const website = "https://mango0422.github.io/";
+    const li1_1 = "2024.03 KE SW 아카데미 4기";
+    const li2_1 = "2024.01. 2023 가천 P-실무프로젝트 영상 공모전 대상";
+
     return (
-        <div class="home-image">
+        <main class="home-image">
             <div class="main-cover" />
             <article class="main-text">
                 <div class="info-container">
@@ -21,25 +30,24 @@ const MyPage = () => {
                 </div>
                 <div id="content">
                     <div class="left-content1">
-                        <img class="img1" src={my_img} style={{ maxWidth: "50%" }} />
+                        <img class="img1" src={my_img} style={{ maxHeight: "200px" }} />
                     </div>
                     <div class="right-content1">
-                        <h2>서용준</h2>
-                        <p>1999년 4월 22일 서울 출생</p>
-                        {/* <p>+82 10-9690-0159</p> */}
-                        <p>tom990422@gmail.com</p>
-                        <p><a style={{ color: "white" }} href="https://mango0422.github.io/">https://mango0422.github.io/</a></p>
+                        <h2>{name}</h2>
+                        <p>{email}</p>
+                        <p><a href={website}>{website}</a></p>
                     </div>
                 </div>
                 <div id="content">
                     <div class="left-content2">
                         <h2>경력</h2>
                         <ul>
-                            <li>2018.02 상계고등학교 졸업</li>
-                            <li>2019.03 가천대학교 입학 (소프트웨어 전공)</li>
-                            <li>2024.03 KE SW 아카데미 4기</li>
+                            <li>{li1_1}</li>
                         </ul>
                         <h2>수상 이력</h2>
+                        <ul>
+                            <li>{li2_1}</li>
+                        </ul>
                     </div>
                     <div class="right-content2">
                         <h2>Skills</h2>
@@ -53,11 +61,15 @@ const MyPage = () => {
                             <img class="icon" src={icon7} alt="" />
                             <img class="icon" src={icon8} alt="" />
                             <img class="icon" src={icon9} alt="" />
+                            <img class="icon" src={icon10} alt="" />
+                            <img class="icon" src={icon11} alt="" />
+                            <img class="icon" src={icon12} alt="" />
                         </div>
                     </div>
                 </div>
+
             </article>
-        </div>
+        </main>
     );
 }
 
