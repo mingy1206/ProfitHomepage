@@ -13,9 +13,9 @@ import icon11 from '../img/icon/fastapi.png'
 import icon12 from '../img/icon/fastapi.png'
 
 const Mem2 = () => {
-    const name = "서용준";
-    const email = "syj0422@gachon.ac.kr";
-    const website = "https://mango0422.github.io/";
+    const name = "이민기";
+    const email = "";
+    const website = "";
     const li1_1 = "2024.03 KE SW 아카데미 4기";
     const li2_1 = "2024.01. 2023 가천 P-실무프로젝트 영상 공모전 대상";
 
