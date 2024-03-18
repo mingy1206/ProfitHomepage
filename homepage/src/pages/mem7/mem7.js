@@ -12,7 +12,7 @@ import icon10 from '../img/icon/fastapi.png'
 import icon11 from '../img/icon/fastapi.png'
 import icon12 from '../img/icon/fastapi.png'
 
-const MyPage = () => {
+const Mem7 = () => {
     const name = "서용준";
     const email = "syj0422@gachon.ac.kr";
     const website = "https://mango0422.github.io/";
@@ -28,7 +28,7 @@ const MyPage = () => {
                 </div>
                 <div id="content">
                     <div class="left-content1">
-                        <img class="img1" src={my_img} style={{ maxHeight: "200px" }} />
+                        <img class="img1" src={my_img} style={{ maxHeight: "200px" }} alt='201935001 김관일' />
                     </div>
                     <div class="right-content1">
                         <h2>{name}</h2>
@@ -71,4 +71,4 @@ const MyPage = () => {
     );
 }
 
-export default MyPage;
+export default Mem7;

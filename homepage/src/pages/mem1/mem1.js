@@ -12,7 +12,7 @@ import icon10 from '../img/icon/docker.png'
 import icon11 from '../img/icon/jenkins.png'
 import icon12 from '../img/icon/fastapi.png'
 
-const mem1 = () => {
+const Mem1 = () => {
     const name = "서용준";
     const email = "syj0422@gachon.ac.kr";
     const website = "https://mango0422.github.io/";
@@ -71,4 +71,4 @@ const mem1 = () => {
     );
 }
 
-export default mem1;
+export default Mem1;
