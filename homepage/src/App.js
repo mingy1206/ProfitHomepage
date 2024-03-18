@@ -2,7 +2,14 @@ import './App.css';
 import Header from './components/header/Header';
 import Slide from './pages/main/Main';
 import Personal from './pages/personal/Personal';
-import mem1 from './pages/mem1/mem1';
+import Mem1 from './pages/mem1/mem1';
+import Mem2 from './pages/mem2/mem2';
+import Mem3 from './pages/mem3/mem3';
+import Mem4 from './pages/mem4/mem4';
+import Mem5 from './pages/mem5/mem5';
+import Mem6 from './pages/mem6/mem6';
+import Mem7 from './pages/mem7/mem7';
+
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import './pages/PersonalPages.css'; // CSS 파일을 가져옴
 
@@ -22,22 +29,22 @@ function App() {
         <Routes>
           <Route path="/" element={<Slide />} />
           <Route path="personal" element={<Personal />} />
-          <Route path="mem1" element={<mem1 />} />
-          <Route path="mem1" element={<mem2 />} />
-          <Route path="mem1" element={<mem3 />} />
-          <Route path="mem1" element={<mem4 />} />
-          <Route path="mem1" element={<mem5 />} />
-          <Route path="mem1" element={<mem6 />} />
-          <Route path="mem1" element={<mem7 />} />
+          <Route path="mem1" element={<Mem1 />} />
+          <Route path="mem2" element={<Mem2 />} />
+          <Route path="mem3" element={<Mem3 />} />
+          <Route path="mem4" element={<Mem4 />} />
+          <Route path="mem5" element={<Mem5 />} />
+          <Route path="mem6" element={<Mem6 />} />
+          <Route path="mem7" element={<Mem7 />} />
         </Routes>
         <div style={{ marginTop: '100px' }}>
           <Link to="/personal">Personal</Link><br />
-          <Link to="/mem1">{name1}</Link>
-          <Link to="/mem2">{name2}</Link>
-          <Link to="/mem3">{name3}</Link>
-          <Link to="/mem4">{name4}</Link>
-          <Link to="/mem5">{name5}</Link>
-          <Link to="/mem6">{name6}</Link>
+          <Link to="/mem1">{name1}</Link>  &nbsp;
+          <Link to="/mem2">{name2}</Link>  &nbsp;
+          <Link to="/mem3">{name3}</Link>  &nbsp;
+          <Link to="/mem4">{name4}</Link>  &nbsp;
+          <Link to="/mem5">{name5}</Link>  &nbsp;
+          <Link to="/mem6">{name6}</Link>  &nbsp;
           <Link to="/mem7">{name7}</Link>
         </div>
       </BrowserRouter>

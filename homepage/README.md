@@ -5,6 +5,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## member 정리
 
 - mem1 : 서용준
+    - 이메일 : syj0422@gachon.ac.kr
+    - 경력 : 2024.03 ~ KE SW 아카데미 4기
+    - 수상이력 : 2024.01 2023 가천대 P-실무프로젝트 영상 공모전 대상
 - mem2 : 이민기
 - mem3 : 김동관
 - mem4 : 권민우

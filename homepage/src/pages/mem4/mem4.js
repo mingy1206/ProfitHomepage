@@ -1,5 +1,3 @@
-import React, { useState, useEffect } from 'react';
-// import './Style.css'; // CSS 파일을 가져옴
 import my_img from './my_img.png'
 import icon1 from '../img/icon/spring.png'
 import icon2 from '../img/icon/react.png'

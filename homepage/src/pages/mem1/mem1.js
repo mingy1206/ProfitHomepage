@@ -1,5 +1,3 @@
-import React, { useState, useEffect } from 'react';
-// import './Style.css'; // CSS 파일을 가져옴
 import my_img from './my_img.png'
 import icon1 from '../img/icon/spring.png'
 import icon2 from '../img/icon/react.png'
@@ -10,11 +8,11 @@ import icon6 from '../img/icon/linux.png'
 import icon7 from '../img/icon/java.png'
 import icon8 from '../img/icon/git.png'
 import icon9 from '../img/icon/aws.png'
-import icon10 from '../img/icon/fastapi.png'
-import icon11 from '../img/icon/fastapi.png'
+import icon10 from '../img/icon/docker.png'
+import icon11 from '../img/icon/jenkins.png'
 import icon12 from '../img/icon/fastapi.png'
 
-const MyPage = () => {
+const mem1 = () => {
     const name = "서용준";
     const email = "syj0422@gachon.ac.kr";
     const website = "https://mango0422.github.io/";
@@ -30,7 +28,7 @@ const MyPage = () => {
                 </div>
                 <div id="content">
                     <div class="left-content1">
-                        <img class="img1" src={my_img} style={{ maxHeight: "200px" }} />
+                        <img class="img1" src={my_img} style={{ maxHeight: "200px" }} alt='201935062 서용준' />
                     </div>
                     <div class="right-content1">
                         <h2>{name}</h2>
@@ -73,4 +71,4 @@ const MyPage = () => {
     );
 }
 
-export default MyPage;
+export default mem1;
