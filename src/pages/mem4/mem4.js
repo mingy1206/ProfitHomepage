@@ -1,23 +1,24 @@
 import my_img from './my_img.png'
-import icon1 from '../img/icon/spring.png'
-import icon2 from '../img/icon/react.png'
+import icon1 from '../img/icon/clang.png'
+import icon2 from '../img/icon/java.png'
 import icon3 from '../img/icon/python.png'
-import icon4 from '../img/icon/node.png'
-import icon5 from '../img/icon/mysql.png'
-import icon6 from '../img/icon/linux.png'
-import icon7 from '../img/icon/java.png'
+import icon4 from '../img/icon/react.png'
+import icon5 from '../img/icon/flask.png'
+import icon6 from '../img/icon/fastapi.png'
+import icon7 from '../img/icon/aws.png'
 import icon8 from '../img/icon/git.png'
-import icon9 from '../img/icon/aws.png'
-import icon10 from '../img/icon/fastapi.png'
-import icon11 from '../img/icon/fastapi.png'
-import icon12 from '../img/icon/fastapi.png'
+// import icon9 from '../img/icon/aws.png'
+// import icon10 from '../img/icon/fastapi.png'
+// import icon11 from '../img/icon/fastapi.png'
+// import icon12 from '../img/icon/fastapi.png'
 
 const Mem4 = () => {
-    const name = "서용준";
-    const email = "syj0422@gachon.ac.kr";
-    const website = "https://mango0422.github.io/";
+    const name = "권민우";
+    const email = "422mukgui@gachon.ac.kr";
+    const website1 = "https://github.com/MINUUUUUUUUUUUU";
+    const website2 = "https://miniminichipchip.tistory.com/";
     const li1_1 = "2024.03 KE SW 아카데미 4기";
-    const li2_1 = "2024.01. 2023 가천 P-실무프로젝트 영상 공모전 대상";
+    const li2_1 = "-";
 
     return (
         <main class="home-image">
@@ -33,7 +34,8 @@ const Mem4 = () => {
                     <div class="right-content1">
                         <h2>{name}</h2>
                         <p>{email}</p>
-                        <p><a href={website}>{website}</a></p>
+                        <p><a href={website1}>{website1}</a></p>
+                        <p><a href={website2}>{website2}</a></p>
                     </div>
                 </div>
                 <div id="content">
@@ -58,10 +60,10 @@ const Mem4 = () => {
                             <img class="icon" src={icon6} alt="" />
                             <img class="icon" src={icon7} alt="" />
                             <img class="icon" src={icon8} alt="" />
-                            <img class="icon" src={icon9} alt="" />
+                            {/* <img class="icon" src={icon9} alt="" />
                             <img class="icon" src={icon10} alt="" />
                             <img class="icon" src={icon11} alt="" />
-                            <img class="icon" src={icon12} alt="" />
+                            <img class="icon" src={icon12} alt="" /> */}
                         </div>
                     </div>
                 </div>
